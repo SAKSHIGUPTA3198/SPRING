@@ -1,0 +1,14 @@
+<p>
+    <input type="text" [(ngModel)]="username"/>
+
+<button (click)="searchUser()">Search User</button>
+<br>
+
+</p>
+<div *ngIf="result">
+   
+        ID: {{result.employeeId}}<br>
+        NAME:{{result.employeeName}}<br>
+        SALARY:{{result.employeeSalary}}<br>
+        Url:{{result.url}}
+</div>
